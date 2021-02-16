@@ -7,5 +7,5 @@ resource "null_resource" "operator-deploy" {
              -H 'Authorization: bearer ${var.token}' \
              -d '{"cluster_id": "${var.cluster_id}", "region": "${var.region}", "all_namespaces": "${var.all_namespaces}", "version_locator_id": "${var.version_locator_id}", "namespaces": "${var.namespaces}"}'
         EOT
-  }
+  } 
 }
